@@ -77,6 +77,10 @@ bool oled_task_user(void) {
             break;
     }
     
+    // Aria label
+    oled_write_P(PSTR("\n"), false);
+    oled_write_P(PSTR("                 Aria"), false);
+    
     return false;
 }
 #endif
